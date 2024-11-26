@@ -1,20 +1,10 @@
 :root{
     --color-green: #76bc21;
     --background-black-opacity: rgb(0, 0, 0, 70%);
+    --color-text:#7a7a7a;
+    --color-text-black:#262626;
 }
-a.link{
-    color: var(--color-green);
-    text-decoration: none;
-    transition: opacity 0.25s ease;
-}
-a.link:hover{
-    opacity: 0.7;
-}
-.block-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .header {
     position: relative;
     bottom: 80px;
@@ -185,4 +175,96 @@ a.link:hover{
     from{
         width: 0%;
     }
+}
+.about-me{
+    display: flex;
+    allign-items: center;
+}
+.about-me .left{
+    flex: 1 1 40%;
+    padding-right: 40px;
+
+}
+.about-me .right{
+    flex: 1 1 60%;
+    padding-left: 20px;
+
+
+
+}
+.about-me__image{
+    display: block;
+    max-width: 350px;
+    margin-left: auto;
+    border-radius: 10px;
+    filter: drop-shadow(10px 10px 20px var(--background-black-opacity));
+}
+.about-me__title{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.about-me__description{
+    font-size: 20px;
+    color:  var(--color-text);
+    margin-bottom: 15px;
+
+}
+ul.about-me__extra{
+    color: var(--color-text);
+    font-size: 20px;
+    margin-top: 20px;
+}
+.about-me__extra-element{
+    display: flex;
+    margin-bottom: 10px;
+    allign-items: center;
+}
+.about-me__extra-element:last-of-type{
+    margin-bottom: 0;
+
+}
+.about-me__extra-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.about-me__extra-icon svg{
+    color: var(--color-green);
+}
+.second-title{
+    position: relative;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.second-title:after{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    bottom: 0;
+    background: var(--color-green);
+    position: absolute;
+    left: calc(50% - 60px /2);
+}
+a.link{
+    color: var(--color-green);
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+a.link:hover{
+    opacity: 0.7;
+}
+.block-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bold{
+    font-weight: 800;
+    color: var(--color-text-black);
+}
+.block{
+    display: block;
+
 }
