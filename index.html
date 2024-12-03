@@ -10,51 +10,52 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+<div class="header-top">
+    <a href="#home" class=" link logo block-center">Bandukov Mikhail</a>
+
+    <nav class="navigation">
+        <ul class="menu block-center">
+            <li class="menu-element">
+                <a class="link menu-element__link active home block-center" href="#home">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                        <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                    </svg>
+
+                </a>
+            </li>
+            <li class="menu-element block-center">
+                <a class="link menu-element__link active" href="#about-me">Обо&nbsp;мне</a>
+            </li>
+            <li class="menu-element block-center">
+                <a class="link menu-element__link active" href="#achievements">Достижения</a>
+            </li>
+            <li class="menu-element block-center">
+                <a class="link menu-element__link active" href="#skills">Навыки</a>
+            </li>
+            <li class="menu-element block-center">
+                <a class="link menu-element__link active" href="#contact-me">Связь со мной</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="switcher-container block-center">
+        <div class="switcher-wrapper">
+            <input type="radio" class=" " name="lang" id="lang-ru" checked>
+            <label class="switcher" for="lang-ru">Ru</label>
+            <input type="radio" class=" " name="lang" id="lang-eng">
+            <label class="switcher" for="lang-eng">Eng</label>
+            <input type="radio" class=" " name="lang" id="lang-chi">
+            <label class="switcher" for="lang-chi">Chi</label>
+            <span class="lang-placeholder"></span>
+        </div>
+    </div>
+</div>
     <header class="header" id="home">
         <img class="header__background" src="images/bg.webp"  alt="background"/>
         <div class="header__background-wrapper"></div>
-        <div class="header-top">
-            <a href="#home" class=" link logo block-center">Bandukov Mikhail</a>
 
-            <nav class="navigation">
-                <ul class="menu block-center">
-                    <li class="menu-element">
-                        <a class="link menu-element__link active home block-center" href="#home">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
-                                <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
-                            </svg>
-
-                        </a>
-                    </li>
-                    <li class="menu-element block-center">
-                        <a class="link menu-element__link active" href="#about-me">Обо&nbsp;мне</a>
-                    </li>
-                    <li class="menu-element block-center">
-                        <a class="link menu-element__link active" href="#achievements">Достижения</a>
-                    </li>
-                    <li class="menu-element block-center">
-                        <a class="link menu-element__link active" href="#skills">Навыки</a>
-                    </li>
-                    <li class="menu-element block-center">
-                        <a class="link menu-element__link active" href="#contact-me">Связь со мной</a>
-                    </li>
-                </ul>
-            </nav>
-
-
-            <div class="switcher-container block-center">
-                <div class="switcher-wrapper">
-                    <input type="radio" class=" " name="lang" id="lang-ru">
-                    <label class="switcher" for="lang-ru">Ru</label>
-                    <input type="radio" class=" " name="lang" id="lang-eng">
-                    <label class="switcher" for="lang-eng">Eng</label>
-                    <input type="radio" class=" " name="lang" id="lang-chi">
-                    <label class="switcher" for="lang-chi">Chi</label>
-                    <span class="lang-placeholder"></span>
-                </div>
-            </div>
-        </div>
 
         <div class="header-center">
             <div class="header-center__wrapper">
@@ -133,35 +134,35 @@
 
             <div class="achievements-list__view slider__wrapper">
                 <a href="" class="achievements-list__element block-center slider__link">
-                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                    <img class="achievements-list__image slider__image" src="images/empty.webp" alt="Place for my achievement">
                 </a>
                 <a href="" class="achievements-list__element block-center slider__link">
-                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                    <img class="achievements-list__image slider__image" src="images/empty.webp" alt="Place for my achievement">
                 </a>
                 <a href="" class="achievements-list__element block-center slider__link">
-                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                    <img class="achievements-list__image slider__image" src="images/empty.webp" alt="Place for my achievement">
                 </a>
             </div>
             <div class="achievements-list__view slider__wrapper">
                 <a href="" class="achievements-list__element block-center slider__link">
-                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                    <img class="achievements-list__image slider__image" src="images/empty.webp" alt="Place for my achievement-2">
                 </a>
                 <a href="" class="achievements-list__element block-center slider__link block-center">
-                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                    <img class="achievements-list__image slider__image" src="images/empty.webp" alt="Place for my achievement-2">
                 </a>
                 <a href="" class="achievements-list__element block-center slider__link">
-                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                    <img class="achievements-list__image slider__image" src="images/empty.webp" alt="Place for my achievement-2">
                 </a>
             </div>
             <div class="achievements-list__view slider__wrapper">
                 <a href="" class="achievements-list__element block-center slider__link">
-                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                    <img class="achievements-list__image slider__image" src="images/empty.webp" alt="Place for my achievement-3">
                 </a>
                 <a href="" class="achievements-list__element block-center slider__link">
-                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                    <img class="achievements-list__image slider__image" src="images/empty.webp" alt="Place for my achievement-3">
                 </a>
                 <a href="" class="achievements-list__element block-center slider__link">
-                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                    <img class="achievements-list__image slider__image" src="images/empty.webp" alt="Place for my achievement-3">
                 </a>
             </div>
         </div>
@@ -174,23 +175,38 @@
     <section class="skills" id="skills">
         <h2 class="second-title">Навыки</h2>
 
-        <p class="section-description">1221</p>
-        <ul class="skills-filters">
-            <li class="skill_filter">Html/Css</li>
-            <li class="skill_filter">Python</li>
-            <li class="skill_filter">Others</li>
+
+        <ul class="skills-filters block-center">
+            <li role="button" class="skill-filter  active">Все</li>
+            <li role="button" class="skill-filter ">Html/Css</li>
+            <li role="button" class="skill-filter ">Languages</li>
+            <li role="button" class="skill-filter ">Database</li>
+            <li role="button" class="skill-filter ">Others</li>
         </ul>
         <div class="skills-wrapper">
-            <ul class="skills-list left">
-                <li class="skill-list__elements">Python</li>
-                <li class="skill-list__elements">SQLite</li>
-                <li class="skill-list__elements">HTML5</li>
-                <li class="skill-list__elements">CSS3</li>
-                <li class="skill-list__elements">C++</li>
-                <li class="skill-list__elements">Django</li>
-                <li class="skill-list__elements">Google</li>
-            </ul>
-            <div class="skill-card right">
+            <div class="skills-list left">
+                <div class="skills-list__row">
+                    <div class="skills-list__element">Python</div>
+                    <div class="skills-list__element">Golang</div>
+                    <div class="skills-list__element">SQLite</div>
+                </div>
+                <div class="skills-list__row">
+                    <div class="skills-list__element">MySQL</div>
+                    <div class="skills-list__element">HTML5</div>
+                    <div class="skills-list__element">CSS3</div>
+                </div>
+                <div class="skills-list__row">
+                    <div class="skills-list__element">C++</div>
+                    <div class="skills-list__element">Django</div>
+                    <div class="skills-list__element">Google</div>
+                </div>
+                <div class="skills-list__row">
+                    <div class="skills-list__element">Git</div>
+                    <div class="skills-list__element">JavaScript</div>
+                </div>
+
+            </div>
+            <div class="skill-divcard right">
                 <div class="skill-card__title">
                     <img src="" alt="" class="skill-card__image">
                     <span class="skill-card">Python</span>
@@ -207,6 +223,19 @@
             <div class="skill-card right">
                 <div class="skill-card__title">
                     <img src="" alt="" class="skill-card__image">
+                    <span class="skill-card">Golang</span>
+                </div>
+                <div class="skill-card__progress">
+                    <span class="skill-card__progress-percent"> undefined% </span>
+                    <div class="skill-card__progress-bar"></div>
+                </div>
+                <p class="skill-card__description">
+                    Есть очень большое желание изучить этот язык
+                </p>
+            </div>
+            <div class="skill-card right">
+                <div class="skill-card__title">
+                    <img src="" alt="" class="skill-card__image">
                     <span class="skill-card">SQLite</span>
                 </div>
                 <div class="skill-card__progress">
@@ -215,6 +244,19 @@
                 </div>
                 <p class="skill-card__description">
                     Имел небольшой опыт работы с данной СУБД.
+                </p>
+            </div>
+            <div class="skill-card right">
+                <div class="skill-card__title">
+                    <img src="" alt="" class="skill-card__image">
+                    <span class="skill-card">MySQL</span>
+                </div>
+                <div class="skill-card__progress">
+                    <span class="skill-card__progress-percent"> undefined% </span>
+                    <div class="skill-card__progress-bar"></div>
+                </div>
+                <p class="skill-card__description">
+                    Есть очень большое желание изучить этоу БД
                 </p>
             </div>
             <div class="skill-card right">
@@ -280,6 +322,32 @@
                 </div>
                 <p class="skill-card__description">
                     Прекрасно владею механизмом поиска в Google.
+                </p>
+            </div>
+            <div class="skill-card right">
+                <div class="skill-card__title">
+                    <img src="" alt="" class="skill-card__image">
+                    <span class="skill-card">Google</span>
+                </div>
+                <div class="skill-card__progress">
+                    <span class="skill-card__progress-percent"> 40% </span>
+                    <div class="skill-card__progress-bar"></div>
+                </div>
+                <p class="skill-card__description">
+                    Умею пользоватьс Git'ом
+                </p>
+            </div>
+            <div class="skill-card right">
+                <div class="skill-card__title">
+                    <img src="" alt="" class="skill-card__image">
+                    <span class="skill-card">JavaScript</span>
+                </div>
+                <div class="skill-card__progress">
+                    <span class="skill-card__progress-percent"> 20% </span>
+                    <div class="skill-card__progress-bar"></div>
+                </div>
+                <p class="skill-card__description">
+                    Недавно начал писать на этом языке
                 </p>
             </div>
         </div>

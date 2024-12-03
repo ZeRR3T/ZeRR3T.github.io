@@ -83,15 +83,35 @@
     background:var(--color-green);
     border-radius: 20px;
     opacity: 0.9;
-
     transition: opacity 0.25s ease;
     cursor: pointer;
+
 }
 .switcher-wrapper:hover{
     opacity: 1;
 }
+
+.switcher-wrapper input[type="radio"]{
+    display: none;
+}
+
+.switcher-wrapper .switcher{
+    position: relative;
+    flex: 1 1 calc(100% / 3);
+    text-align: center;
+
+    z-index: 2;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.25s ease-in-out;
+}
+.switcher span:first-child{
+    color: #fff;
+}
+.switcher-wrapper input[type="radio"]:checked + .switcher{
+    color:var(--color-green);
+}
 .lang-placeholder{
-    content: "";
     width: 45px;
     height: 30px;
     background: #fff;
@@ -109,26 +129,6 @@
 .switcher-wrapper input[type="radio"]:nth-of-type(3):checked ~ .lang-placeholder{
     left: 98px;
 }
-.switcher-wrapper input[type="radio"]{
-    display: none;
-}
-
-.switcher-wrapper .switcher{
-    position: relative;
-    flex: 1 1 calc(100% / 3);
-    text-align: center;
-    z-index: 2;
-    cursor: pointer;
-    color: #fff;
-    transition: color 0.25s ease-in-out;
-}
-.switcher span:first-child{
-    color: #fff;
-}
-.switcher-wrapper input[type="radio"]:checked + .switcher{
-    color:var(--color-green);
-}
-
 .header-center{
     position: relative;
     color: #fff;
@@ -138,7 +138,6 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
-
 }
 .header-center__wrapper{
     width: 100%;
@@ -253,13 +252,80 @@ ul.about-me__extra{
     border-top:40px solid var(--background-grey);
     bottom: -120px;
 }
+.achievements-list__view:first-of-type{
+    animation: autoplay 8s infinite;
+}
+@keyframes autoplay{
 
-
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left:-100%;
+    }
+    50% {
+        margin-left:-100%;
+    }
+    65% {
+        margin-left: -200%;
+    }
+    85% {
+        margin-left: -200%;
+    }
+    90% {
+        margin-left:-100%;
+    }
+    100% {
+        margin-left:0;
+    }
+}
 /* Section skills*/
 .skills{
     padding: 60px 0 40px;
 }
+.skills-filters{
+    gap:20px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.skill-filter{
+cursor: pointer;
+}
+.skill-filter:hover{
+    color: var(--color-green);
+    transition:color 0.25s ease;
+}
+.skills-wrapper{
+    display:flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.skills-wrapper .left{
+    flex: 1 1 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    padding-right: 20px;
+}
+.skills-list__row{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-list__element{
+    flex: 1 1 31%;
+    max-width: 31%;
+    min-height: 80px;
+    padding:10px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 0.3);
+    border-radius: 3px;
 
+}
+.skills-wrapper .right{
+    flex: 1 1 30%;
+}
+/*Общие классы*/
 .second-title{
     position: relative;
     font-size: 32px;
@@ -302,6 +368,9 @@ a.link:hover{
 .section-grey{
     background: var(--background-grey);
 }
+.active{
+    color: var(--color-green);
+}
 /*Slider*/
 .slider{
     position: relative;
@@ -314,6 +383,7 @@ a.link:hover{
     justify-content: space-between;
     flex: 1 1 100%;
     min-width: 100%;
+    transition: all 0.5s ease;
 }
 .slider__link{
     flex: 1 1 33%;
@@ -336,13 +406,23 @@ a.link:hover{
 }
 .slider__controls-element{
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 40px;
+    height: 8px;
     cursor: pointer;
-    transition: opacity 0.25s ease;
-    border-radius: 50%;
-    border: 1px solid #000;
+    transition: all 0.25s ease;
+    border-radius: 8px;
+    background: rgb(0 0 0 / 20%);
 }
 .slider__controls-element:hover{
-    opacity: 0.7;
+    background:var(--color-green);
+}
+
+.slider__input:nth-of-type(1):checked ~ .slider__wrapper:first-of-type{
+    margin-left: 0;
+}
+.slider__input:nth-of-type(2):checked ~ .slider__wrapper:first-of-type{
+    margin-left: -100%;
+}
+.slider__input:nth-of-type(3):checked ~ .slider__wrapper:first-of-type{
+    margin-left: -200%;
 }
