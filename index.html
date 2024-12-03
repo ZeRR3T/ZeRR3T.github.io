@@ -10,48 +10,51 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<div class="header-top">
-    <a href="#home" class=" link logo block-center">Bandukov Mikhail</a>
-
-    <nav class="navigation">
-        <ul class="menu block-center">
-            <li class="menu-element">
-                <a class="link menu-element__link active home block-center" href="#home">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                        <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
-                        <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
-                    </svg>
-
-                </a>
-            </li>
-            <li class="menu-element block-center">
-                <a class="link menu-element__link active" href="#about-me">Обо&nbsp;мне</a>
-            </li>
-            <li class="menu-element block-center">
-                <a class="link menu-element__link active" href="#achievements">Достижения</a>
-            </li>
-            <li class="menu-element block-center">
-                <a class="link menu-element__link active" href="#skills">Навыки</a>
-            </li>
-            <li class="menu-element block-center">
-                <a class="link menu-element__link active" href="#contact-me">Связь со мной</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="switcher-container block-center">
-        <div class="switcher-wrapper">
-            <input type="checkbox" id="lang">
-            <label class="switcher" for="lang">
-                <span>Ru</span>
-                <span>Eng</span>
-            </label>
-        </div>
-    </div>
-</div>
     <header class="header" id="home">
         <img class="header__background" src="images/bg.webp"  alt="background"/>
         <div class="header__background-wrapper"></div>
+        <div class="header-top">
+            <a href="#home" class=" link logo block-center">Bandukov Mikhail</a>
 
+            <nav class="navigation">
+                <ul class="menu block-center">
+                    <li class="menu-element">
+                        <a class="link menu-element__link active home block-center" href="#home">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                                <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li class="menu-element block-center">
+                        <a class="link menu-element__link active" href="#about-me">Обо&nbsp;мне</a>
+                    </li>
+                    <li class="menu-element block-center">
+                        <a class="link menu-element__link active" href="#achievements">Достижения</a>
+                    </li>
+                    <li class="menu-element block-center">
+                        <a class="link menu-element__link active" href="#skills">Навыки</a>
+                    </li>
+                    <li class="menu-element block-center">
+                        <a class="link menu-element__link active" href="#contact-me">Связь со мной</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="switcher-container block-center">
+                <div class="switcher-wrapper">
+                    <input type="radio" class=" " name="lang" id="lang-ru">
+                    <label class="switcher" for="lang-ru">Ru</label>
+                    <input type="radio" class=" " name="lang" id="lang-eng">
+                    <label class="switcher" for="lang-eng">Eng</label>
+                    <input type="radio" class=" " name="lang" id="lang-chi">
+                    <label class="switcher" for="lang-chi">Chi</label>
+                    <span class="lang-placeholder"></span>
+                </div>
+            </div>
+        </div>
 
         <div class="header-center">
             <div class="header-center__wrapper">
@@ -66,7 +69,7 @@
         </div>
         <div class="right">
             <h2 class="about-me__title">Бандуков Михаил Алексеевич</h2>
-            <p class="about-me__description ">Я начинающий веб-разработчик, живу в Санкт-Петербурге, обучаюсь на 1 курса ГУАПа по специальности "Программная инженерия".</p>
+            <p class="about-me__description ">Я начинающий веб-разработчик, живу в Прекрасном городе Тосно,рядом с Санкт-Петрбургом, обучаюсь на 1 курса ГУАПа по специальности "Программная инженерия".</p>
             <p class="about-me__description ">Имею опыт работы с такими языками программирования как Python,C++, а также HTML/CSS/JS.</p>
             <ul class="about-me__extra">
                 <li class="about-me__extra-element">
@@ -121,12 +124,52 @@
             </ul>
         </div>
     </section>
-    <section class="achievements" id="achievements">
+    <section class="achievements section-grey block-center" id="achievements">
         <h2 class="second-title">Achievements</h2>
-            <ul class="achievements-list">
-                <li class="achievements-list__element">1</li>
-                <li class="achievements-list__element">2</li>
-            </ul>
+        <div class="achievements-list slider">
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-1">
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-2">
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-3">
+
+            <div class="achievements-list__view slider__wrapper">
+                <a href="" class="achievements-list__element block-center slider__link">
+                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                </a>
+                <a href="" class="achievements-list__element block-center slider__link">
+                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                </a>
+                <a href="" class="achievements-list__element block-center slider__link">
+                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                </a>
+            </div>
+            <div class="achievements-list__view slider__wrapper">
+                <a href="" class="achievements-list__element block-center slider__link">
+                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                </a>
+                <a href="" class="achievements-list__element block-center slider__link block-center">
+                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                </a>
+                <a href="" class="achievements-list__element block-center slider__link">
+                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                </a>
+            </div>
+            <div class="achievements-list__view slider__wrapper">
+                <a href="" class="achievements-list__element block-center slider__link">
+                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                </a>
+                <a href="" class="achievements-list__element block-center slider__link">
+                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                </a>
+                <a href="" class="achievements-list__element block-center slider__link">
+                    <img class="achievements-list__image slider__image" src="" alt="Place for my achievement">
+                </a>
+            </div>
+        </div>
+        <div class="slider__controls">
+            <label for="slider-achievements-1" class="slider__controls-element"></label>
+            <label for="slider-achievements-2" class="slider__controls-element"></label>
+            <label for="slider-achievements-3" class="slider__controls-element"></label>
+        </div>
     </section>
     <section class="skills" id="skills">
         <h2 class="second-title">Навыки</h2>
