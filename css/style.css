@@ -51,7 +51,22 @@
 .header-top a.link{
     color: #fff;
 }
-
+.header-center{
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 170ch;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.header-center__wrapper{
+    width: 100%;
+    background: var(--background-black-opacity);
+    text-align: center;
+    padding: 20px 0;
+}
 .logo{
     width: 350px;
     font-size: 36px;
@@ -65,7 +80,7 @@
 .menu-element:last-child{
     margin-right: 0;
 }
-.menu-element a.link:hover{
+.menu-element a.link.active, .menu-element a.link:hover{
     color: var(--color-green);
 
 }
@@ -101,6 +116,7 @@
 }
 
 .switcher-wrapper .switcher{
+
     position: relative;
     flex: 1 1 calc(100% / 3);
     text-align: center;
@@ -117,6 +133,7 @@
     color:var(--color-green);
 }
 .lang-placeholder{
+    display: none;
     width: 45px;
     height: 30px;
     background: #fff;
@@ -134,22 +151,7 @@
 .switcher-wrapper input[type="radio"]:nth-of-type(3):checked ~ .lang-placeholder{
     left: 98px;
 }
-.header-center{
-    position: relative;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 170ch;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
-.header-center__wrapper{
-    width: 100%;
-    background: var(--background-black-opacity);
-    text-align: center;
-    padding: 20px 0;
-}
+
 .name{
     font-size: 58px;
     line-height: 64px;
@@ -304,7 +306,7 @@ cursor: pointer;
     transition:color 0.25s ease;
 }
 .skills-wrapper{
-    display:flex;
+    display:none;
     width: 80%;
     margin: 0 auto;
 }
@@ -398,6 +400,26 @@ cursor: pointer;
     text-align: justify;
     color: var(--color-text);
 }
+input[name="skills-filter-radio"]{
+    display: none;
+}
+
+input[name="skills-filter-radio"]:nth-of-type(1):checked ~ .skills-filters .skill-filter:nth-of-type(1),
+input[name="skills-filter-radio"]:nth-of-type(2):checked ~ .skills-filters .skill-filter:nth-of-type(2),
+input[name="skills-filter-radio"]:nth-of-type(3):checked ~ .skills-filters .skill-filter:nth-of-type(3),
+input[name="skills-filter-radio"]:nth-of-type(4):checked ~ .skills-filters .skill-filter:nth-of-type(4),
+input[name="skills-filter-radio"]:nth-of-type(5):checked ~ .skills-filters .skill-filter:nth-of-type(5){
+    color: var(--color-green);
+}
+
+input[name="skills-filter-radio"]:nth-of-type(1):checked ~ .skills-wrapper:nth-of-type(2),
+input[name="skills-filter-radio"]:nth-of-type(2):checked ~ .skills-wrapper:nth-of-type(3),
+input[name="skills-filter-radio"]:nth-of-type(3):checked ~ .skills-wrapper:nth-of-type(4),
+input[name="skills-filter-radio"]:nth-of-type(4):checked ~ .skills-wrapper:nth-of-type(5),
+input[name="skills-filter-radio"]:nth-of-type(5):checked ~ .skills-wrapper:nth-of-type(6){
+    display: flex;
+}
+
 /* Секция обратная связь */
 .contact-me{
     position: relative;

@@ -144,7 +144,7 @@
     .menu-hamburger{
         position: fixed;
         right: 20px;
-        top: 20px;
+        top: 45px;
 
         display: flex;
         justify-content: space-between;
