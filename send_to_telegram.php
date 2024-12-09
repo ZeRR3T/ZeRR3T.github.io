@@ -1,6 +1,6 @@
 <?php
 // Укажите токен вашего бота
-$token = "7709288474:AAEnCxJydJobEjbgxA_cbHJ1kE6P1qvkPJY";
+$token = "7918859004:AAHO7C8Ai_Z5-QV9YclG8LHk3zhJyM5Tzvw";
 
 // Укажите ID чата, куда бот будет отправлять сообщения
 $chat_id = "1978279396";
