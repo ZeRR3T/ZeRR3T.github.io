@@ -568,6 +568,7 @@ input[name="skill-filter-radio"]:nth-of-type(13):checked ~  .s2:nth-of-type(14)
     flex-direction: column;
     align-items: center;
     padding: 40px 0;
+
 }
 .socials{
     display: flex;
