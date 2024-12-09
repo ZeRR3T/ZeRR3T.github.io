@@ -38,7 +38,7 @@
 }
 .header-top{
     position: sticky;
-    top: 0;
+    top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -326,7 +326,9 @@ cursor: pointer;
     max-width: 100%;
 }
 .skills-list__title{
+    font-size: 28px;
     margin-left:auto;
+
 }
 .skills-list__element{
     display: flex;
@@ -352,20 +354,29 @@ cursor: pointer;
     padding-left: 40px;
     font-size: 24px;
 }
-.skills-wrapper .right{
+.skills-wrapper .skill-card{
     flex: 1 1 30%;
     padding: 0 0 20px 20px;
+
+}
+.skills-wrapper .right{
+
     border-left: 1px solid var(--color-grey);
 }
 
+.s2{
+    display: none;
+}
+
 .skill-card__title {
+    font-size: 28px;
     display: flex;
     allign-items: center;
     margin-bottom: 10px;
 }
 .skill-card__image{
-    width: 150px;
     flex: 1 1 30%;
+    height: 100px;
 }
 .skill-card__name{
     flex: 1 1 70%;
@@ -383,6 +394,7 @@ cursor: pointer;
     font-size: 18px;
     color: var(--color-text);
 }
+/*
 .skill-card__progress-bar{
     position: relative;
     background: var(--color-light-grey);
@@ -396,11 +408,25 @@ cursor: pointer;
     background: var(--color-green);
     height: inherit;
 }
+*/
 .skill-card__description{
     text-align: justify;
     color: var(--color-text);
 }
+.skills-card__label{
+    display: block;
+    padding: 60px 60px 60px 60px;
+    height: 170px;
+    width: 170px;
+}
+.skills-card__label-text{
+    font-size: 24px;
+    color: var(--color-green);
+}
 input[name="skills-filter-radio"]{
+    display: none;
+}
+input[name="skill-filter-radio"]{
     display: none;
 }
 
@@ -419,6 +445,26 @@ input[name="skills-filter-radio"]:nth-of-type(4):checked ~ .skills-wrapper:nth-o
 input[name="skills-filter-radio"]:nth-of-type(5):checked ~ .skills-wrapper:nth-of-type(6){
     display: flex;
 }
+
+input[name="skill-filter-radio"]:nth-of-type(1):checked ~  .s2:nth-of-type(2),
+input[name="skill-filter-radio"]:nth-of-type(2):checked ~  .s2:nth-of-type(3),
+input[name="skill-filter-radio"]:nth-of-type(3):checked ~  .s2:nth-of-type(4),
+input[name="skill-filter-radio"]:nth-of-type(4):checked ~  .s2:nth-of-type(5),
+input[name="skill-filter-radio"]:nth-of-type(5):checked ~  .s2:nth-of-type(6),
+input[name="skill-filter-radio"]:nth-of-type(6):checked ~  .s2:nth-of-type(7),
+input[name="skill-filter-radio"]:nth-of-type(7):checked ~  .s2:nth-of-type(8),
+input[name="skill-filter-radio"]:nth-of-type(8):checked ~  .s2:nth-of-type(9),
+input[name="skill-filter-radio"]:nth-of-type(9):checked ~  .s2:nth-of-type(10),
+input[name="skill-filter-radio"]:nth-of-type(10):checked ~  .s2:nth-of-type(11),
+input[name="skill-filter-radio"]:nth-of-type(11):checked ~  .s2:nth-of-type(12),
+input[name="skill-filter-radio"]:nth-of-type(12):checked ~  .s2:nth-of-type(13),
+input[name="skill-filter-radio"]:nth-of-type(13):checked ~  .s2:nth-of-type(14)
+
+{
+    display: block;
+}
+
+
 
 /* Секция обратная связь */
 .contact-me{
@@ -515,16 +561,7 @@ input[name="skills-filter-radio"]:nth-of-type(5):checked ~ .skills-wrapper:nth-o
 .submit:hover{
     opacity: 1;
 }
-.form-result{
-    position: absolute;
-    inset: 0;
-    background: var(--background-light-black-opacity);
-}
-.form-result__content{
-    max-width: 1200px;
-    font-size: 20px;
-    color: #fff;
-}
+
 /* Подвал сайта */
 .footer{
     display: flex;
@@ -659,7 +696,4 @@ a.link:hover{
 }
 .cls{
     clear: both;
-}
-.blur{
-    filter: blur(5px);
 }

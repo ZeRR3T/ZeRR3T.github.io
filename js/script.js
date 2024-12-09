@@ -10,7 +10,7 @@ $(".menu-element__link").click(function() {
     const paddingTop= parseInt(hrefElement.css("padding-top"));
     const menuHeight = $(".header-top").height();
     $([document.documentElement, document.body]).animate({
-        scrollTop: hrefElement.offset().top-paddingTop-menuHeight
+        scrollTop: hrefElement.offset().top-paddingTop-menuHeight-25
     }, 1000);
 
 
