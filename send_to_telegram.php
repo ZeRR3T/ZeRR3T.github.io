@@ -21,7 +21,7 @@ $txt .= "Сообщение: $message\n";
 $txt .= "IP: $ip_address";
 
 // URL для отправки сообщения в Telegram
-$url = "https://api.telegram.org/bot$token/sendMessage";
+$url = "https://api.telegram.org/bot{$token}/sendMessage";
 
 // Параметры запроса
 $data = [
